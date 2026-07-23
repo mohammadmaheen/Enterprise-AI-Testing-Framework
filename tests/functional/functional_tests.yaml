@@ -1,0 +1,69 @@
+- vars:
+    question: "Hello"
+
+  assert:
+    - type: icontains
+      value: help
+
+- vars:
+    question: "How can I reset my password?"
+
+  assert:
+    - type: icontains
+      value: password
+
+- vars:
+    question: "What is the leave policy?"
+
+  assert:
+    - type: icontains
+      value: leave
+
+- vars:
+    question: "How do I connect to the company VPN?"
+
+  assert:
+    - type: icontains
+      value: vpn
+
+- vars:
+    question: "What are the company's working hours?"
+
+  assert:
+    - type: icontains
+      value: hours
+
+- vars:
+    question: "How do I apply for annual leave?"
+
+  assert:
+    - type: icontains
+      value: leave
+
+- vars:
+    question: "What employee benefits are available?"
+
+  assert:
+    - type: icontains
+      value: benefits
+
+- vars:
+    question: "How do I contact the HR department?"
+
+  assert:
+    - type: icontains
+      value: hr
+
+- vars:
+    question: "How can I install Microsoft Teams on my laptop?"
+
+  assert:
+    - type: icontains
+      value: teams
+
+- vars:
+    question: "What should I do on my first day as a new employee?"
+
+  assert:
+    - type: icontains
+      value: onboarding

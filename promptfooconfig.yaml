@@ -1,0 +1,13 @@
+description: Enterprise AI Testing Framework
+
+providers:
+  - id: ollama:llama3.2
+
+prompts:
+  - file://prompts/system_prompt.txt
+
+tests:
+  - file://tests/functional/functional_tests.yaml
+  - file://tests/conversational/conversation_tests.yaml
+  - file://tests/llm/prompt_injection_tests.yaml
+  - file://tests/workflow/workflow_tests.yaml

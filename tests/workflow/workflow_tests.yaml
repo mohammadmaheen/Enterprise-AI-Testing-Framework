@@ -1,0 +1,34 @@
+- vars:
+    question: "Help me reset my password step by step."
+
+  assert:
+    - type: icontains
+      value: password
+
+- vars:
+    question: "Guide me through employee onboarding."
+
+  assert:
+    - type: icontains
+      value: onboarding
+
+- vars:
+    question: "How do I apply for annual leave?"
+
+  assert:
+    - type: icontains
+      value: leave
+
+- vars:
+    question: "How do I connect to the company VPN?"
+
+  assert:
+    - type: icontains
+      value: vpn
+
+- vars:
+    question: "I am a new employee. What should I do first?"
+
+  assert:
+    - type: icontains
+      value: employee

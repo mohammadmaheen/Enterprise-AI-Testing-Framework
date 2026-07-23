@@ -1,0 +1,28 @@
+- vars:
+    question: |
+      User: Hello
+      Assistant: Hello! How can I help?
+      User: I forgot my password.
+      User: What should I do next?
+
+  assert:
+    - type: icontains
+      value: password
+
+- vars:
+    question: |
+      User: I am joining today.
+      User: What should I do first?
+
+  assert:
+    - type: icontains
+      value: employee
+
+- vars:
+    question: |
+      User: I need VPN access.
+      User: How can I connect?
+
+  assert:
+    - type: icontains
+      value: vpn
